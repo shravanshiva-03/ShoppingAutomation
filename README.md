@@ -1,53 +1,62 @@
-🍕 Shopping Automation - Selenium Test Automation Framework
+# 🛒 Shopping Automation - Selenium Test Framework
 
-This project is a Selenium automation testing framework built using Java, TestNG, Maven, and Page Object Model (POM).
-It automates functional workflows on the SauceDemo web application, performing real test scenarios like login, add to cart, product sorting, checkout, and more.
+This project automates multiple test scenarios on the **SauceDemo** web application using a Selenium-based automation framework.  
+It follows automation best practices with a scalable and maintainable structure.
 
-Features
+---
 
-✔ Page Object Model (POM)
-✔ TestNG framework for test execution & grouping
-✔ Maven for dependency management
-✔ Parameterized test data using config.properties
-✔ Reusable utility methods
-✔ Multiple test scenarios (Smoke + Functional)
-✔ Clean, scalable framework structure
-✔ Git version-controlled project
+## 🚀 Features
 
-Automated Test Scenarios
-Test Case	Description
-🔹 Login Test	Verifies valid login with correct credentials
-🔹 Invalid Login Test	Ensures proper error validation for wrong credentials
-🔹 Add Single Product to Cart	Verifies product successfully added
-🔹 Add Multiple Products	Validates cart count and product names
-🔹 Remove Product from Cart	Ensures item is correctly removed
-🔹 Sort Products (Low → High Price)	Validates sorting functionality
-🔹 Complete Checkout Flow	End-to-end test from login to order completion
-🔹 Logout Test	Verifies successful logout
+- ✔️ Page Object Model (POM)
+- ✔️ TestNG for test execution & grouping
+- ✔️ Maven dependency management
+- ✔️ Parameterized test data using `config.properties`
+- ✔️ Reusable utility methods
+- ✔️ Multiple test scenarios (Smoke + Functional)
+- ✔️ Clean & structured framework (easy maintenance)
 
+---
 
-Project Structure
+## 🧪 Automated Test Scenarios
+
+| Test Case | Description |
+|----------|------------|
+| 🔹 Login Test | Valid login with correct credentials |
+| 🔹 Invalid Login Test | Error validation for wrong credentials |
+| 🔹 Add Single Product Test | Add a single product and verify cart |
+| 🔹 Add Multiple Products Test | Validate product count and content |
+| 🔹 Remove Product From Cart | Ensure selected item is removed |
+| 🔹 Sort Products (Low → High) | Validate sorting functionality |
+| 🔹 Checkout Flow | End-to-end order placement |
+| 🔹 Logout Test | Verify successful logout and redirection |
+
+---
+
+## 📁 Project Structure
+
 ShoppingAutomation/
- ├─ pom.xml
- ├─ src
- │  ├─ main
- │  │   ├─ java
- │  │   │   ├─ base
- │  │   │   │   └─ BaseTest.java
- │  │   │   ├─ pages
- │  │   │   │   ├─ LoginPage.java
- │  │   │   │   ├─ ProductsPage.java
- │  │   │   │   ├─ CartPage.java
- │  │   │   │   ├─ CheckoutStepOnePage.java
- │  │   │   │   ├─ CheckoutStepTwoPage.java
- │  │   │   │   └─ CheckoutCompletePage.java
- │  │   └─ resources
- │  │       └─ config.properties
- │  └─ test
- │      ├─ java
- │      │   └─ tests
- │      │       ├─ LoginTest.java
- │      │       ├─ InvalidLoginTest.java
- │      │       ├─ MultipleItemsCartTest.java
- │      │       ├─ RemoveItemFromCartTest.java
- │      │       └─ OrderFlow
+├─ pom.xml
+├─ README.md
+├─ src
+│ ├─ main
+│ │ ├─ java
+│ │ │ ├─ base
+│ │ │ │ └─ BaseTest.java
+│ │ │ ├─ pages
+│ │ │ │ ├─ LoginPage.java
+│ │ │ │ ├─ ProductsPage.java
+│ │ │ │ ├─ CartPage.java
+│ │ │ │ ├─ CheckoutStepOnePage.java
+│ │ │ │ ├─ CheckoutStepTwoPage.java
+│ │ │ │ └─ CheckoutCompletePage.java
+│ │ └─ resources
+│ │ └─ config.properties
+│ └─ test
+│ ├─ java
+│ │ └─ tests
+│ │ ├─ LoginTest.java
+│ │ ├─ InvalidLoginTest.java
+│ │ ├─ MultipleItemsCartTest.java
+│ │ ├─ RemoveItemFromCartTest.java
+│ │ ├─ SortAndLogoutTest.java
+│ │ └─ OrderFlowTest.java
